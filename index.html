@@ -21,28 +21,27 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             overflow: hidden;
-            padding: 20px;
+            border: 1px solid #2c3e50;
         }
 
-        .header {
-            background-color: #2c3e50;
-            color: white;
+        .header,
+        .footer {
+            background-color: #fff;
+            color: #2c3e50;
             padding: 30px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
 
-        .header .left {
-            max-width: 60%;
-        }
-
-        .header h1 {
+        .header h1,
+        .footer h1 {
             margin: 0;
             font-size: 2.5em;
         }
 
-        .header p {
+        .header p,
+        .footer p {
             margin: 10px 0;
             font-size: 1.2em;
         }
@@ -54,30 +53,44 @@
             object-fit: cover;
         }
 
+        .separator {
+            border-bottom: 2px solid #2c3e50;
+            margin: 20px 0;
+        }
+
         .content {
             padding: 20px;
             line-height: 1.6;
+            font-size: 1.1em;
         }
 
         .content p {
             margin-bottom: 15px;
-            font-size: 1.2em;
         }
 
-        .contact-info {
+        .footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
             display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-            font-size: 1.1em;
+            justify-content: space-around;
+            align-items: center;
         }
 
-        .contact-info div {
-            margin: 5px 0;
-        }
-
-        .contact-info a {
-            color: #2c3e50;
+        .footer a {
+            color: #fff;
             text-decoration: none;
+        }
+
+        .footer div {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer div img {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
         }
     </style>
 </head>
@@ -93,6 +106,8 @@
                 <img src="jatin-dp.png" alt="Jatin Sharma">
             </div>
         </div>
+
+        <div class="separator"></div>
 
         <div class="content">
             <p>Dear Hiring Team,</p>
@@ -111,11 +126,19 @@
                 Jatin Sharma</p>
         </div>
 
-        <div class="contact-info">
-            <div>Email: <a href="mailto:jatinsharma21600@gmail.com">jatinsharma21600@gmail.com</a></div>
-            <div>Phone: <a href="tel:+918595625687">(+91) 8595625687</a></div>
-            <div>Location: Gurugram, India</div>
-            </a></div>
+        <div class="footer">
+            <div>
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" alt="Email Icon">
+                <a href="mailto:jatinsharma21600@gmail.com">jatinsharma21600@gmail.com</a>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone Icon">
+                <a href="tel:+918595625687">(+91) 8595625687</a>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/address.png" alt="Location Icon">
+                <span>Gurugram, India</span>
+            </div>
         </div>
     </div>
 </body>
